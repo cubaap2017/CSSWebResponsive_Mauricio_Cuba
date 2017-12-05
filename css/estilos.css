@@ -16,7 +16,7 @@ body {
   border-radius: 5px;
   display: flex;
 	flex-direction: row;
-  font-size: 70%;
+  font-size: 1em;
 }
 
 .contenedor_header a:visited {
@@ -39,8 +39,8 @@ a:hover{
 }
 
 .contenedor_imgcentral {
-  width: 100%auto;
-  height: 70%;
+  width: 100% auto;
+  height: 100% auto;
   text-align: center;
   background-color: #82c3a6;
   border-radius: 5px;
@@ -68,7 +68,7 @@ a:hover{
 
 .contenedor_imgizq {
   width: 50%;
-  height: 300px;
+  height: 250px;
   padding: 6%;
 }
 
@@ -112,7 +112,7 @@ a:hover{
 
 .contenedor_imgder {
   width: 50%;
-  height: 300px;
+  height: 250px;
   padding: 6%;
 }
 
@@ -130,7 +130,7 @@ a:hover{
   flex-direction: row;
   border-radius: 5px;
   color: black;
-  font-size: 80%;
+  font-size: 1em;
 }
 
 .contenedor_footer a:visited {
@@ -227,4 +227,67 @@ a:hover{
 #img2, #img4, #img6 {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+@media all and (max-width: 900px) {
+  .contenedor_header {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .contenedor_titulo {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .contenedor_nav {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .contenedor_imgsecundarias {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .contenedor_imgizq {
+    width: 100%;
+    height: 70%;
+  }
+  .contenedor_imgder {
+    width: 100%;
+    height: 70%;
+  }
+  .contenedor_footer {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .contenedor_footer h2 {
+    font-size: 2em;
+  }
+
+  .contenedor_contactos {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: left;
+  }
+  .contenedor_terminos {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    text-align: left;
+  }
+  .contenedor_redes {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    text-align: left;
+  }
+  .contenedor_derechos {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding-bottom: 30px;
+  }
 }
